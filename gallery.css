@@ -38,9 +38,57 @@ body {
 	margin-bottom: 3rem;
 }
 
-.content-header .h1 {
-	font-size: 2rem;
+a{text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 20px;
+  border:none;
+  border-radius: 10px;
+  background:#ADABA8;
+  font-size: 2rem;
+  padding: 10px 20px;
 }
+
+a:hover{
+      border-radius: 22px;
+      background: #faa732;
+      font-size: 32px;
+      padding: 17px 30px;
+}
+
+.delay{background-color: #000;
+	  color: white;
+      padding: 10px 20px;
+	  border: none;
+      border-radius: 8px;
+		}
+
+.delay:hover{
+	 border-radius: 22px;
+	 padding: 10px 20px;
+	 font-size: 2px;
+      background: #faa732;
+      padding: 17px 30px;
+
+}
+
+.post {
+      -webkit-transition: padding 0.3s linear 0.3s;
+      transition: padding 0.3s linear 0.3s;
+
+    }
+
+.all {
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+    }
+
+
+.color {
+       -webkit-transition: background-color 0.4s ease-in-out 0.5s;
+      transition: background-color 0.4s ease ease-in-out  0.5s;
+
+    }
 
 .gallery {
 	margin-top: 2rem;
@@ -60,7 +108,7 @@ body {
 	clear: both;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px){
 	.wrapper { width: 460px; }
 
 	.articles {
@@ -73,9 +121,22 @@ body {
 		margin: 2rem 0 2rem 20px;
 		width: 200px;
 	}
+
+	a:hover{
+      border-radius: 20px;
+      background: blue;
+      font-size: 22px;
+      padding: 17px 30px;
+	}
+
+	 .border {
+      -webkit-transition: border-radius 0.4s linear;
+      transition: border-radius 0.4s linear;
+    }
+
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 	.wrapper { width: 748px; }
 
 	.articles {
@@ -90,6 +151,17 @@ body {
 		border: none;
 		margin-bottom: 0;
 	}
+
+	a:hover{background-color: black;
+			font-size: 20px;}
+
+	.padding {
+      -webkit-transition: padding 0.3s linear 0.3s;
+      transition: padding 0.3s linear 0.3s;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -99,6 +171,16 @@ body {
 		float: left;
 		width: 364px;
 	}
+
+	a:hover{
+      border-radius: 12px;
+      background: #F5880C;
+      font-size: 32px;
+      padding: 17px 30px;
+	}
+
+	.fs{-webkit-transition:font-size 0.4s ease-out;
+	transition:font-size 0.4s ease-out;}
 
 	.gallery {
 		float: right;
